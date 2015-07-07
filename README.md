@@ -1,0 +1,1 @@
+# symfony-bootstrap-vagrant-docker
