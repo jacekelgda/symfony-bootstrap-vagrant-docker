@@ -13,5 +13,5 @@ auto=${args[0]}
 if [ -z "$auto" ]; then
     sh bin/core-vagrant-up.sh
 else
-    sh bin/core-vagrant-up.sh template
+    sh bin/core-vagrant-up.sh <PROJECT_NAME>
 fi
