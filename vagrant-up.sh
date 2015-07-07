@@ -9,9 +9,9 @@ if [ ! -d "bin/vagrant-up.sh" ]; then
 fi
 
 args=("$@")
-auto=${args[0]}
-if [ -z "$auto" ]; then
+project=${args[0]}
+if [ -z "$project" ]; then
     sh bin/core-vagrant-up.sh
 else
-    sh bin/core-vagrant-up.sh <PROJECT_NAME>
+    sh bin/core-vagrant-up.sh project
 fi
