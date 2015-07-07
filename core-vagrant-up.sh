@@ -63,6 +63,10 @@ if [ -f ".dockercfg.TEMPLATE" ]; then
   fi
 fi
 
+if [ ! -f "Dockerfile" ]; then
+  cp Dockerfile.TEMPLATE Dockerfile
+fi
+
 if [ -f "Vagrantfile" ]; then
     vagrant up --provider=docker --no-parallel
 
