@@ -9,7 +9,7 @@ git submodule update --init --recursive
 
 IP=192.168.36.10
 PORT=8080
-VM_HOSTNAME="devstack.dev"
+VM_HOSTNAME=template.lh
 
 PS3="Pick project to setup : "
 
@@ -27,7 +27,7 @@ case $hostname in
   template)
     IP=192.168.37.10
     PORT=8080
-    VM_HOSTNAME=devstack.dev
+    VM_HOSTNAME=template.lh
     break
     ;;
   *)

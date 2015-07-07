@@ -5,7 +5,7 @@ if [ ! -d ".modman" ]; then
 fi
 
 if [ ! -d "bin/vagrant-up.sh" ]; then
-  modman clone git@github.com:Sysla/vagrant-docker-utils.git
+  modman clone git@github.com:jacekelgda/symfony-bootstrap-vagrant-docker
 fi
 
 args=("$@")
