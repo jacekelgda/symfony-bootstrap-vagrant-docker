@@ -2,6 +2,7 @@
 # Set PS3 prompt
 
 modman clone git@github.com:Sysla/ubuntu1410-docker.git
+modman clone git@github.com:jacekelgda/nginx-mongo-vagrant
 modman update-all
 modman deploy-all
 
