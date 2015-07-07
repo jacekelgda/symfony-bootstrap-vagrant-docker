@@ -35,7 +35,7 @@ case $hostname in
     ;;
 esac
 
-sed "s/<PROJECT_NAME>/$hostname" < bin/vagrant-reload.sh.TEMPLATE > bin/vagrant-reload.sh
+sed "s/<PROJECT_NAME>/$hostname/" < bin/vagrant-reload.sh.TEMPLATE > bin/vagrant-reload.sh
 sed "s/<IP_ADDRESS>/$IP/;s/<PORT>/$PORT/" < proxy/config.yaml.TEMPLATE > proxy/config.yaml
 sed "s/<HOSTNAME>/$VM_HOSTNAME/" < proxy/Vagrantfile.proxy.TEMPLATE > proxy/Vagrantfile.proxy
 
