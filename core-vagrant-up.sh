@@ -1,10 +1,10 @@
 #!/bin/bash
 # Set PS3 prompt
 
-modman clone git@github.com:Sysla/ubuntu1410-docker.git
-modman clone git@github.com:jacekelgda/nginx-mongo-vagrant
-modman update-all
-modman deploy-all
+modman clone git@github.com:Sysla/ubuntu1410-docker.git --copy
+modman clone git@github.com:jacekelgda/nginx-mongo-vagrant --copy
+modman update-all --copy
+modman deploy-all --copy
 
 git submodule update --init --recursive
 
