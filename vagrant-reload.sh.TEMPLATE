@@ -1,6 +1,6 @@
 #!/bin/bash
 
-modman update-all --copy
+modman update-all
 modman deploy-all --copy --force
 
 sh bin/vagrant-down.sh
