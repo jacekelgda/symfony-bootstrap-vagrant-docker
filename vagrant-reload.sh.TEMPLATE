@@ -1,7 +1,8 @@
 #!/bin/bash
 
-modman update-all
-modman deploy-all
+modman update --copy --force nginx-mongo-vagrant
+modman update ubuntu1410-docker
+modman update symfony-bootstrap-vagrant-docker
 
 sh bin/vagrant-down.sh
 sh bin/vagrant-up.sh <PROJECT_NAME>

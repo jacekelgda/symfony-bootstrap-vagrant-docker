@@ -2,8 +2,10 @@
 # Set PS3 prompt
 
 modman clone git@github.com:Sysla/ubuntu1410-docker.git
-modman clone git@github.com:jacekelgda/nginx-mongo-vagrant --copy
-modman update-all
+modman clone git@github.com:jacekelgda/nginx-mongo-vagrant
+modman update --copy --force nginx-mongo-vagrant
+modman update ubuntu1410-docker
+modman update symfony-bootstrap-vagrant-docker
 
 git submodule update --init --recursive
 
