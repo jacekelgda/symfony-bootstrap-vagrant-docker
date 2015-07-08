@@ -4,7 +4,7 @@
 modman clone git@github.com:Sysla/ubuntu1410-docker.git --copy
 modman clone git@github.com:jacekelgda/nginx-mongo-vagrant --copy
 modman update-all --copy
-modman deploy-all --copy
+modman deploy-all --copy --force
 
 git submodule update --init --recursive
 
